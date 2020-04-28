@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         startCaptureSession()
         previewView.frame = view.bounds
+        previewView.previewLayer.videoGravity = .resizeAspectFill
         previewView.previewLayer.session = captureSession
         view.addSubview(previewView)
     }
@@ -73,6 +74,21 @@ class ViewController: UIViewController {
         captureSession.addOutput(photoOutput)
         captureSession.commitConfiguration()
         captureSession.startRunning()
+    }
+    
+    func getAvailableDevices() -> [AVCaptureDevice] {
+        let deviceTypes = [
+            AVCaptureDevice.DeviceType.builtInDualCamera,
+            AVCaptureDevice.DeviceType.builtInDualWideCamera,
+            AVCaptureDevice.DeviceType.builtInMicrophone,
+            AVCaptureDevice.DeviceType.builtInTelephotoCamera,
+            AVCaptureDevice.DeviceType.builtInTripleCamera,
+            AVCaptureDevice.DeviceType.builtInTrueDepthCamera,
+            AVCaptureDevice.DeviceType.builtInUltraWideCamera,
+            AVCaptureDevice.DeviceType.builtInWideAngleCamera,
+        ]
+        let discoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: deviceTypes, mediaType: .video, position: .unspecified)
+        return discoverySession.devices
     }
 }
 
