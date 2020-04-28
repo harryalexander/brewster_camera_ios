@@ -76,19 +76,19 @@ class ViewController: UIViewController {
         captureSession.startRunning()
     }
     
-    func getAvailableDevices() -> [AVCaptureDevice] {
-        let deviceTypes = [
-            AVCaptureDevice.DeviceType.builtInDualCamera,
-            AVCaptureDevice.DeviceType.builtInDualWideCamera,
-            AVCaptureDevice.DeviceType.builtInMicrophone,
-            AVCaptureDevice.DeviceType.builtInTelephotoCamera,
-            AVCaptureDevice.DeviceType.builtInTripleCamera,
-            AVCaptureDevice.DeviceType.builtInTrueDepthCamera,
-            AVCaptureDevice.DeviceType.builtInUltraWideCamera,
-            AVCaptureDevice.DeviceType.builtInWideAngleCamera,
-        ]
-        let discoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: deviceTypes, mediaType: .video, position: .unspecified)
-        return discoverySession.devices
-    }
+//    func getAvailableDevices() -> [AVCaptureDevice] {
+//        let deviceTypes = [
+//            AVCaptureDevice.DeviceType.builtInDualCamera,
+//            AVCaptureDevice.DeviceType.builtInDualWideCamera,
+//            AVCaptureDevice.DeviceType.builtInMicrophone,
+//            AVCaptureDevice.DeviceType.builtInTelephotoCamera,
+//            AVCaptureDevice.DeviceType.builtInTripleCamera,
+//            AVCaptureDevice.DeviceType.builtInTrueDepthCamera,
+//            AVCaptureDevice.DeviceType.builtInUltraWideCamera,
+//            AVCaptureDevice.DeviceType.builtInWideAngleCamera,
+//        ]
+//        let discoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: deviceTypes, mediaType: .video, position: .unspecified)
+//        return discoverySession.devices
+//    }
 }
 
