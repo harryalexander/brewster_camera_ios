@@ -14,6 +14,7 @@
 		6837FC462454C7BB000C077D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6837FC452454C7BB000C077D /* Assets.xcassets */; };
 		6837FC492454C7BB000C077D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6837FC472454C7BB000C077D /* LaunchScreen.storyboard */; };
 		6837FC542454C7BB000C077D /* BrewsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6837FC532454C7BB000C077D /* BrewsterTests.swift */; };
+		6837FC6024588BD2000C077D /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6837FC5F24588BD2000C077D /* CameraPreviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		6837FC4F2454C7BB000C077D /* BrewsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrewsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6837FC532454C7BB000C077D /* BrewsterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewsterTests.swift; sourceTree = "<group>"; };
 		6837FC552454C7BB000C077D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6837FC5F24588BD2000C077D /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				6837FC452454C7BB000C077D /* Assets.xcassets */,
 				6837FC472454C7BB000C077D /* LaunchScreen.storyboard */,
 				6837FC4A2454C7BB000C077D /* Info.plist */,
+				6837FC5F24588BD2000C077D /* CameraPreviewView.swift */,
 			);
 			path = Brewster;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6837FC6024588BD2000C077D /* CameraPreviewView.swift in Sources */,
 				6837FC412454C7B7000C077D /* ViewController.swift in Sources */,
 				6837FC3D2454C7B7000C077D /* AppDelegate.swift in Sources */,
 				6837FC3F2454C7B7000C077D /* SceneDelegate.swift in Sources */,
